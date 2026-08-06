@@ -1,0 +1,709 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:22px 0;
+
+    transition:all .35s ease;
+
+}
+
+.navbar.scrolled{
+
+    padding:14px 0;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(0,0,0,.05);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   NAV WRAPPER
+========================================== */
+
+.nav-wrapper{
+
+    display:grid;
+
+    grid-template-columns:auto 1fr auto;
+
+    align-items:center;
+
+    gap:50px;
+
+}
+
+/* ==========================================
+   BRAND
+========================================== */
+
+.nav-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    text-decoration:none;
+
+    flex-shrink:0;
+
+}
+
+.nav-logo{
+
+    width:58px;
+
+    height:58px;
+
+    object-fit:contain;
+
+}
+
+.nav-brand-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.nav-brand-text h3{
+
+    font-size:22px;
+
+    color:#fff;
+
+    line-height:1.2;
+
+}
+
+.nav-brand-text span{
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.75);
+
+}
+
+/* Navbar after scroll */
+
+.navbar.scrolled .nav-brand-text h3{
+
+    color:var(--primary);
+
+}
+
+.navbar.scrolled .nav-brand-text span{
+
+    color:#666;
+
+}
+
+/* ==========================================
+   MENU
+========================================== */
+
+.nav-menu{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:36px;
+
+    list-style:none;
+
+}
+
+.nav-link{
+
+    position:relative;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.navbar.scrolled .nav-link{
+
+    color:var(--primary);
+
+}
+
+/* Hover */
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-8px;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:.35s ease;
+
+}
+
+.nav-link:hover{
+
+    color:var(--secondary);
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+/* Active */
+
+.nav-link.active{
+
+    color:var(--secondary);
+
+}
+
+.nav-link.active::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   ACTIONS
+========================================== */
+
+.nav-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+/* ==========================================
+   CONTACT BUTTON
+========================================== */
+
+.contact-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 30px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    background:transparent;
+
+    color:#fff;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:all .35s ease;
+
+}
+
+/* Hover */
+
+.contact-btn:hover{
+
+    background:var(--secondary);
+
+    border-color:var(--secondary);
+
+    color:#111;
+
+    transform:translateY(-3px);
+
+}
+
+/* Scrolled Navbar */
+
+.navbar.scrolled .contact-btn{
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border-color:var(--primary);
+
+}
+
+/* Scrolled Hover */
+
+.navbar.scrolled .contact-btn:hover{
+
+    background:var(--secondary);
+
+    border-color:var(--secondary);
+
+    color:#111;
+
+}
+
+/* ==========================================
+   MENU BUTTON
+========================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+.menu-toggle span{
+
+    display:block;
+
+    width:28px;
+
+    height:2px;
+
+    margin:6px auto;
+
+    background:#fff;
+
+    transition:.35s ease;
+
+    border-radius:20px;
+
+}
+
+.navbar.scrolled .menu-toggle span{
+
+    background:var(--primary);
+
+}
+
+/* ==========================================
+   MOBILE NAVIGATION
+========================================== */
+
+.mobile-nav{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(15,15,15,.72);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s ease;
+
+    z-index:999;
+
+}
+
+.mobile-nav.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ==========================================
+   MOBILE PANEL
+========================================== */
+
+.mobile-nav-content{
+
+    position:absolute;
+
+    top:0;
+
+    right:0;
+
+    width:min(380px,100%);
+
+    height:100%;
+
+    background:#ffffff;
+
+    padding:120px 40px 50px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transform:translateX(100%);
+
+    transition:.45s ease;
+
+    overflow-y:auto;
+
+}
+
+.mobile-nav.active .mobile-nav-content{
+
+    transform:translateX(0);
+
+}
+
+/* ==========================================
+   MOBILE LINKS
+========================================== */
+
+.mobile-link{
+
+    display:block;
+
+    padding:18px 0;
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    color:var(--primary);
+
+    font-size:18px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s ease;
+
+}
+
+.mobile-link:hover{
+
+    color:var(--secondary);
+
+    padding-left:10px;
+
+}
+
+/* ==========================================
+   MOBILE CONTACT BUTTON
+========================================== */
+
+.mobile-contact-btn{
+
+    margin-top:28px;
+
+    width:auto;
+
+    max-width:220px;
+
+    min-width:140px;
+
+    min-height:40px;
+
+    border-radius:999px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--secondary);
+
+    color:#111;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    padding:10px 16px;
+
+    font-size:14px;
+
+    transition:.35s ease;
+
+}
+
+.mobile-contact-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(198,161,91,.28);
+
+}
+
+/* ==========================================
+   MOBILE SOCIALS
+========================================== */
+
+.mobile-socials{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+.mobile-socials a{
+
+    width:52px;
+
+    height:52px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#f6f6f6;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    color:var(--primary);
+
+    transition:.35s ease;
+
+}
+
+.mobile-socials a:hover{
+
+    background:var(--secondary);
+
+    color:#111;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   HAMBURGER
+========================================== */
+
+.menu-toggle{
+
+    position:relative;
+
+    z-index:1002;
+
+}
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:translateY(8px) rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:translateY(-8px) rotate(-45deg);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .nav-wrapper{
+
+        grid-template-columns:auto auto;
+
+    }
+
+    .nav-menu{
+
+        display:none;
+
+    }
+
+    .contact-btn{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:18px 0;
+
+    }
+
+    .navbar.scrolled{
+
+        padding:14px 0;
+
+    }
+
+    .nav-logo{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+    .nav-brand-text h3{
+
+        font-size:18px;
+
+    }
+
+    .nav-brand-text span{
+
+        font-size:10px;
+
+        letter-spacing:1.5px;
+
+    }
+
+    .mobile-nav-content{
+
+        width:100%;
+
+        padding:110px 30px 40px;
+
+    }
+
+    .mobile-link{
+
+        font-size:17px;
+
+        padding:16px 0;
+
+    }
+
+    .mobile-contact-btn{
+
+        display:inline-flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        width:auto;
+
+        max-width:220px;
+
+        min-width:140px;
+
+        height:auto;
+
+        min-height:38px;
+
+        padding:10px 16px;
+
+        margin:16px auto 0;
+
+        border-radius:999px;
+
+        border:1px solid rgba(255,255,255,.25);
+
+        color:#fff;
+
+        background:rgba(255,255,255,.08);
+
+        font-size:14px;
+
+        text-decoration:none;
+
+        transition:all .35s ease;
+
+    }
+
+    .mobile-contact-btn:hover{
+
+        background:var(--secondary);
+
+        border-color:var(--secondary);
+
+        color:#111;
+
+    }
+
+}

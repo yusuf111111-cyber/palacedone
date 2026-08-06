@@ -1,0 +1,134 @@
+/* ==========================================
+   RESET CSS
+   Royal Palace Website
+   Version: 1.0
+========================================== */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Media */
+
+img,
+picture,
+svg,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Forms */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Quotes */
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: "";
+}
+
+/* Text Selection */
+
+::selection {
+    background: rgba(198, 161, 91, 0.25);
+}
+
+/* Textareas */
+
+textarea {
+    resize: vertical;
+}
+
+/* Hidden */
+
+[hidden] {
+    display: none !important;
+}
+
+/* Remove Tap Highlight */
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Disabled */
+
+button:disabled,
+input:disabled {
+    cursor: not-allowed;
+}
+
+/* Focus */
+
+:focus-visible {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}

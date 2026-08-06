@@ -1,0 +1,344 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    position:relative;
+
+    padding:100px 0 40px;
+
+    background:#161311;
+
+    color:#fff;
+
+    overflow:hidden;
+
+}
+
+.footer::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(198,161,91,.06),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(122,24,38,.08),
+    transparent 40%);
+
+    pointer-events:none;
+
+}
+
+/* ==========================================
+   TOP
+========================================== */
+
+.footer-top{
+
+    position:relative;
+
+    text-align:center;
+
+    max-width:650px;
+
+    margin:0 auto 80px;
+
+    z-index:2;
+
+}
+
+.footer-logo{
+
+    width:95px;
+
+    margin:0 auto 24px;
+
+}
+
+.footer-top h2{
+
+    color:#fff;
+
+    margin-bottom:18px;
+
+    font-size:52px;
+
+}
+
+.footer-top p{
+
+    color:rgba(255,255,255,.72);
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.footer-content{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    gap:80px;
+
+    padding:60px 0;
+
+    border-top:1px solid rgba(198,161,91,.18);
+
+    border-bottom:1px solid rgba(198,161,91,.18);
+
+    z-index:2;
+
+}
+
+/* ==========================================
+   COLUMN
+========================================== */
+
+.footer-column h3{
+
+    color:#fff;
+
+    margin-bottom:28px;
+
+    font-size:30px;
+
+}
+
+.footer-column ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.footer-column ul li{
+
+    list-style:none;
+
+}
+
+.footer-column a{
+
+    color:rgba(255,255,255,.72);
+
+    transition:.35s ease;
+
+}
+
+.footer-column a:hover{
+
+    color:var(--secondary);
+
+    padding-left:8px;
+
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.footer-contact li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+
+}
+
+.footer-contact i{
+
+    color:var(--secondary);
+
+    font-size:18px;
+
+    margin-top:5px;
+
+}
+
+/* ==========================================
+   SOCIAL
+========================================== */
+
+.footer-social-text{
+
+    color:rgba(255,255,255,.72);
+
+    margin-bottom:24px;
+
+}
+
+.social-links{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.social-links a{
+
+    width:54px;
+
+    height:54px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    border:1px solid rgba(198,161,91,.20);
+
+    background:rgba(255,255,255,.03);
+
+    color:#fff;
+
+    font-size:18px;
+
+    transition:.35s ease;
+
+}
+
+.social-links a:hover{
+
+    background:var(--secondary);
+
+    border-color:var(--secondary);
+
+    color:#111;
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(198,161,91,.25);
+
+}
+
+/* ==========================================
+   BOTTOM
+========================================== */
+
+.footer-bottom{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:35px;
+
+    z-index:2;
+
+}
+
+.footer-bottom p{
+
+    color:rgba(255,255,255,.55);
+
+    font-size:15px;
+
+}
+
+.footer-bottom strong{
+
+    color:var(--secondary);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+    .footer{
+
+        padding:80px 0 30px;
+
+    }
+
+    .footer-top{
+
+        margin-bottom:60px;
+
+    }
+
+    .footer-top h2{
+
+        font-size:42px;
+
+    }
+
+    .footer-content{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer-top h2{
+
+        font-size:34px;
+
+    }
+
+    .footer-column h3{
+
+        font-size:24px;
+
+    }
+
+    .social-links{
+
+        justify-content:center;
+
+    }
+
+}

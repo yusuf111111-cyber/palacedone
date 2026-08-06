@@ -1,0 +1,1115 @@
+/* ==========================================
+   HERO
+========================================== */
+
+.council-hero{
+
+    position:relative;
+
+    height:72vh;
+
+    min-height:650px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.council-hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.council-hero-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.council-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.80));
+
+}
+
+.council-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.council-hero-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.council-hero h1{
+
+    color:#fff;
+
+    font-size:clamp(3.5rem,6vw,6rem);
+
+    margin-bottom:25px;
+
+    line-height:1.05;
+
+}
+
+.council-hero .hero-kicker{
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.council-hero .hero-subtitle{
+
+    color:#fff;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:22px;
+
+    margin:25px 0;
+
+}
+
+.council-hero .hero-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    margin:35px auto;
+
+}
+
+.council-hero .hero-description{
+
+    color:rgba(255,255,255,.9);
+
+    max-width:760px;
+
+    margin:auto;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.council-intro{
+
+    padding:120px 0;
+
+    background:#fff;
+
+}
+
+.council-intro-grid{
+
+    display:grid;
+
+    grid-template-columns:480px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.council-intro-image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.council-intro-image img{
+
+    width:100%;
+
+    display:block;
+
+    transition:.5s;
+
+}
+
+.council-intro-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.council-intro-content{
+
+    max-width:760px;
+
+}
+
+.council-intro-content h2{
+
+    font-size:clamp(2.6rem,5vw,4rem);
+
+    color:var(--primary);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.council-intro-content p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+@media(max-width:1100px){
+
+    .council-intro-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .council-intro{
+
+        padding:80px 0;
+
+    }
+
+    .council-intro-content{
+
+        text-align:center;
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIBILITIES
+========================================== */
+
+.responsibility-section{
+
+    padding:120px 0;
+
+    background:#f8f7f3;
+
+}
+
+.responsibility-header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.responsibility-header h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.7rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.responsibility-header .section-divider{
+
+    margin:0 auto 30px;
+
+}
+
+.responsibility-header p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+.responsibility-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+.responsibility-card{
+
+    background:#fff;
+
+    padding:40px 30px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.responsibility-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.responsibility-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:22px;
+
+}
+
+.responsibility-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.responsibility-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.responsibility-story{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.responsibility-story p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .responsibility-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .responsibility-section{
+
+        padding:80px 0;
+
+    }
+
+    .responsibility-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .responsibility-header h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .responsibility-header p,
+
+    .responsibility-story p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   COMMUNITY DEVELOPMENT
+========================================== */
+
+.community-section{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.community-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 480px;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.community-content{
+
+    max-width:760px;
+
+}
+
+.community-content h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.6rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.community-content p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+.community-image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.community-image img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.community-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .community-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .community-section{
+
+        padding:80px 0;
+
+    }
+
+    .community-content{
+
+        text-align:center;
+
+    }
+
+    .community-content h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .community-content p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   LEADERSHIP & GOVERNANCE
+========================================== */
+
+.leadership-section{
+
+    padding:120px 0;
+
+    background:#f8f7f3;
+
+}
+
+.leadership-grid{
+
+    display:grid;
+
+    grid-template-columns:480px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.leadership-image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.leadership-image img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.leadership-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.leadership-content{
+
+    max-width:760px;
+
+}
+
+.leadership-content h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.6rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.leadership-content p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .leadership-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .leadership-section{
+
+        padding:80px 0;
+
+    }
+
+    .leadership-content{
+
+        text-align:center;
+
+    }
+
+    .leadership-content h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .leadership-content p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   CULTURAL HERITAGE
+========================================== */
+
+.council-culture{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:url("../images/council/culture.jpg") center center/cover no-repeat;
+
+    overflow:hidden;
+
+}
+
+.council-culture-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,8,8,.75);
+
+}
+
+.council-culture-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.council-culture .section-tag{
+
+    color:var(--secondary);
+
+}
+
+.council-culture h2{
+
+    color:#fff;
+
+    font-size:clamp(2.8rem,5vw,4.3rem);
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.council-culture .section-divider{
+
+    margin:0 auto 35px;
+
+}
+
+.council-culture p{
+
+    color:rgba(255,255,255,.88);
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .council-culture{
+
+        padding:90px 0;
+
+    }
+
+    .council-culture h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .council-culture p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   COUNCIL MISSION
+========================================== */
+
+.mission-section{
+
+    padding:120px 0;
+
+    background:#f8f7f3;
+
+}
+
+.mission-header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.mission-header h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.7rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.mission-header .section-divider{
+
+    margin:0 auto 30px;
+
+}
+
+.mission-header p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+.mission-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.mission-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:22px;
+
+}
+
+.mission-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.mission-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.mission-story{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.mission-story p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .mission-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .mission-section{
+
+        padding:80px 0;
+
+    }
+
+    .mission-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .mission-header h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .mission-header p,
+
+    .mission-story p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   COUNCIL CLOSING
+========================================== */
+
+.council-closing{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:url("../images/council/finale.jpg") center center/cover no-repeat;
+
+    overflow:hidden;
+
+}
+
+.council-closing-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,8,8,.80);
+
+}
+
+.council-closing-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.council-logo{
+
+    width:95px;
+
+    margin-bottom:30px;
+
+}
+
+.council-closing span{
+
+    display:inline-block;
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+.council-closing h2{
+
+    color:#fff;
+
+    font-size:clamp(2.8rem,5vw,4.5rem);
+
+    line-height:1.2;
+
+    margin-bottom:30px;
+
+}
+
+.closing-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    margin:0 auto 35px;
+
+}
+
+.council-closing p{
+
+    color:rgba(255,255,255,.88);
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:45px;
+
+    max-width:800px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.council-closing h4{
+
+    color:#fff;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.council-closing small{
+
+    color:var(--secondary);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .council-closing{
+
+        padding:90px 0;
+
+    }
+
+    .council-logo{
+
+        width:70px;
+
+    }
+
+    .council-closing h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .council-closing p{
+
+        font-size:16px;
+
+    }
+
+    .council-closing h4{
+
+        font-size:24px;
+
+    }
+
+}

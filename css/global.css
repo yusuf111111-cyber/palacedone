@@ -1,0 +1,124 @@
+/* ==========================================
+   GLOBAL CSS
+   Royal Palace Website
+   Version: 1.0
+========================================== */
+
+/* ==========================================
+   HTML & BODY
+========================================== */
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+body{
+    background:var(--bg-body);
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+    width:100%;
+    max-width:var(--container-width);
+    margin-inline:auto;
+    padding-inline:var(--container-padding);
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+section{
+    position:relative;
+    padding:var(--section-space) 0;
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+    user-select:none;
+    -webkit-user-drag:none;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+    transition:var(--transition);
+}
+
+/* ==========================================
+   ICONS
+========================================== */
+
+i{
+    line-height:1;
+}
+
+/* ==========================================
+   OVERFLOW
+========================================== */
+
+.overflow-hidden{
+    overflow:hidden;
+}
+
+/* ==========================================
+   BACKGROUND UTILITIES
+========================================== */
+
+.bg-white{
+    background:var(--bg-white);
+}
+
+.bg-light{
+    background:var(--bg-light);
+}
+
+.bg-dark{
+    background:var(--bg-dark);
+}
+
+.bg-charcoal{
+    background:var(--bg-charcoal);
+}
+
+/* ==========================================
+   POSITION UTILITIES
+========================================== */
+
+.position-relative{
+    position:relative;
+}
+
+.position-absolute{
+    position:absolute;
+}
+
+/* ==========================================
+   WIDTH UTILITIES
+========================================== */
+
+.w-100{
+    width:100%;
+}
+
+.h-100{
+    height:100%;
+}
+
+/* ==========================================
+   CURSOR
+========================================== */
+
+.cursor-pointer{
+    cursor:pointer;
+}

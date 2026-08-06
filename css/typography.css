@@ -1,0 +1,269 @@
+/* ==========================================
+   TYPOGRAPHY CSS
+   Royal Palace Website
+   Version: 1.0
+========================================== */
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-body);
+    color: var(--text-body);
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--heading-font);
+    font-weight: var(--fw-bold);
+    color: var(--text-dark);
+    line-height: var(--lh-heading);
+    letter-spacing: -.5px;
+}
+
+h1{
+    font-size: var(--fs-display);
+}
+
+h2{
+    font-size: var(--fs-h1);
+}
+
+h3{
+    font-size: var(--fs-h2);
+}
+
+h4{
+    font-size: var(--fs-h3);
+}
+
+h5{
+    font-size: var(--fs-h4);
+}
+
+h6{
+    font-size: var(--fs-h5);
+}
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+p{
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--text-body);
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+    color: inherit;
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--secondary);
+}
+
+/* ==========================================
+   SMALL TEXT
+========================================== */
+
+small{
+    font-size: var(--fs-small);
+    color: var(--text-light);
+}
+
+/* ==========================================
+   STRONG
+========================================== */
+
+strong{
+    font-weight: var(--fw-semibold);
+}
+
+/* ==========================================
+   EMPHASIS
+========================================== */
+
+em{
+    font-style: italic;
+}
+
+/* ==========================================
+   TEXT UTILITIES
+========================================== */
+
+.text-center{
+    text-align:center;
+}
+
+.text-left{
+    text-align:left;
+}
+
+.text-right{
+    text-align:right;
+}
+
+.text-uppercase{
+    text-transform:uppercase;
+}
+
+.text-capitalize{
+    text-transform:capitalize;
+}
+
+.text-white{
+    color:var(--text-white);
+}
+
+.text-dark{
+    color:var(--text-dark);
+}
+
+.text-light{
+    color:var(--text-light);
+}
+
+.text-muted{
+    color:var(--text-muted);
+}
+
+.text-gold{
+    color:var(--secondary);
+}
+
+/* ==========================================
+   DISPLAY TITLE
+========================================== */
+
+.display-title{
+    font-size: var(--fs-display);
+    font-family: var(--heading-font);
+    font-weight: var(--fw-bold);
+    line-height: 1.1;
+}
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+.section-title{
+    font-size: var(--fs-h2);
+    font-family: var(--heading-font);
+    font-weight: var(--fw-bold);
+    color: var(--text-dark);
+    margin-bottom: var(--space-16);
+}
+
+/* ==========================================
+   SECTION SUBTITLE
+========================================== */
+
+.section-subtitle{
+    display:inline-block;
+    font-size: var(--fs-small);
+    font-weight: var(--fw-semibold);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color: var(--secondary);
+    margin-bottom: var(--space-12);
+}
+
+/* ==========================================
+   SECTION DESCRIPTION
+========================================== */
+
+.section-description{
+    max-width:700px;
+    margin-inline:auto;
+    font-size:var(--fs-body);
+    color:var(--text-light);
+    line-height:1.8;
+}
+
+/* ==========================================
+   BLOCKQUOTE
+========================================== */
+
+blockquote{
+    font-family:var(--heading-font);
+    font-size:32px;
+    line-height:1.5;
+    color:var(--text-dark);
+    border-left:4px solid var(--secondary);
+    padding-left:24px;
+    margin:32px 0;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:991px){
+
+    h1{
+        font-size:56px;
+    }
+
+    h2{
+        font-size:42px;
+    }
+
+    h3{
+        font-size:36px;
+    }
+
+    .display-title{
+        font-size:56px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:44px;
+    }
+
+    h2{
+        font-size:36px;
+    }
+
+    h3{
+        font-size:30px;
+    }
+
+    h4{
+        font-size:26px;
+    }
+
+    .display-title{
+        font-size:44px;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+}

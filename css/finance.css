@@ -1,0 +1,1236 @@
+/* ==========================================
+   FINANCE HERO
+========================================== */
+
+.finance-hero{
+
+    position:relative;
+
+    height:72vh;
+
+    min-height:650px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.finance-hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+}
+
+.finance-hero-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+}
+
+.finance-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        rgba(8,8,8,.38),
+        rgba(8,8,8,.82)
+    );
+
+}
+
+.finance-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.finance-hero-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.finance-hero .hero-kicker{
+
+    display:inline-block;
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+.finance-hero h1{
+
+    color:#fff;
+
+    font-size:clamp(3.5rem,6vw,6rem);
+
+    line-height:1.05;
+
+    margin-bottom:24px;
+
+}
+
+.finance-hero .hero-subtitle{
+
+    color:#fff;
+
+    font-size:22px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:30px;
+
+}
+
+.finance-hero .hero-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    margin:0 auto 35px;
+
+}
+
+.finance-hero .hero-description{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:rgba(255,255,255,.88);
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+    .finance-hero{
+
+        min-height:560px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .finance-hero{
+
+        height:65vh;
+
+        min-height:500px;
+
+    }
+
+    .finance-hero h1{
+
+        font-size:clamp(2.8rem,8vw,4.3rem);
+
+    }
+
+    .finance-hero .hero-subtitle{
+
+        font-size:16px;
+
+        line-height:1.8;
+
+    }
+
+    .finance-hero .hero-description{
+
+        font-size:16px;
+
+        max-width:95%;
+
+    }
+
+}
+
+/* ==========================================
+   ABOUT OFL
+========================================== */
+
+.finance-about{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.finance-about-grid{
+
+    display:grid;
+
+    grid-template-columns:480px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.finance-about-image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.finance-about-image img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.finance-about-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.finance-about-content{
+
+    max-width:760px;
+
+}
+
+.finance-about-content h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.6rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.finance-about-content p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .finance-about-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .finance-about{
+
+        padding:80px 0;
+
+    }
+
+    .finance-about-content{
+
+        text-align:center;
+
+    }
+
+    .finance-about-content h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .finance-about-content p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   VISION & MISSION
+========================================== */
+
+.finance-purpose{
+
+    padding:120px 0;
+
+    background:#f8f7f3;
+
+}
+
+.finance-purpose-header{
+
+    max-width:820px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.finance-purpose-header h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.7rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.finance-purpose-header .section-divider{
+
+    margin:0 auto;
+
+}
+
+.finance-purpose-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.purpose-card{
+
+    background:#fff;
+
+    padding:60px 50px;
+
+    border-radius:24px;
+
+    box-shadow:0 20px 55px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.purpose-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.purpose-icon{
+
+    width:85px;
+
+    height:85px;
+
+    border-radius:50%;
+
+    background:rgba(184,134,11,.12);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+.purpose-icon i{
+
+    color:var(--secondary);
+
+    font-size:36px;
+
+}
+
+.purpose-card span{
+
+    display:block;
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.purpose-card h3{
+
+    color:var(--primary);
+
+    font-size:32px;
+
+    line-height:1.3;
+
+    margin-bottom:22px;
+
+}
+
+.purpose-card p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+@media(max-width:991px){
+
+    .finance-purpose-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .finance-purpose{
+
+        padding:80px 0;
+
+    }
+
+    .purpose-card{
+
+        padding:40px 30px;
+
+        text-align:center;
+
+    }
+
+    .purpose-icon{
+
+        margin:0 auto 30px;
+
+    }
+
+    .purpose-card h3{
+
+        font-size:28px;
+
+    }
+
+}
+
+/* ==========================================
+   FINANCIAL SERVICES
+========================================== */
+
+.services-section{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+}
+
+.services-header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.services-header h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.8rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.services-header .section-divider{
+
+    margin:0 auto 30px;
+
+}
+
+.services-header p{
+
+    color:#666;
+
+    line-height:2;
+
+    font-size:17px;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:45px 35px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 28px 60px rgba(0,0,0,.12);
+
+}
+
+.service-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:24px;
+
+}
+
+.service-card h3{
+
+    color:var(--primary);
+
+    font-size:24px;
+
+    margin-bottom:18px;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+.services-story{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.services-story p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .services-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .services-section{
+
+        padding:80px 0;
+
+    }
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .services-header h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .services-header p,
+
+    .services-story p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   FINANCIAL INCLUSION
+========================================== */
+
+.inclusion-section{
+
+    padding:120px 0;
+
+    background:#f8f7f3;
+
+}
+
+.inclusion-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 480px;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.inclusion-content{
+
+    max-width:760px;
+
+}
+
+.inclusion-content h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.6rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.inclusion-content p{
+
+    color:#555;
+
+    font-size:17px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+.inclusion-image{
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
+
+}
+
+.inclusion-image img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.inclusion-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .inclusion-grid{
+
+        grid-template-columns:1fr;
+
+        gap:60px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .inclusion-section{
+
+        padding:80px 0;
+
+    }
+
+    .inclusion-content{
+
+        text-align:center;
+
+    }
+
+    .inclusion-content h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .inclusion-content p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   STRATEGIC PARTNERSHIPS
+========================================== */
+
+.finance-partnership{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:url("../images/finance/partners.jpg") center center/cover no-repeat;
+
+    overflow:hidden;
+
+}
+
+.finance-partnership-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,8,8,.78);
+
+}
+
+.finance-partnership-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.finance-partnership .section-tag{
+
+    color:var(--secondary);
+
+}
+
+.finance-partnership h2{
+
+    color:#fff;
+
+    font-size:clamp(2.8rem,5vw,4.4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.finance-partnership .section-divider{
+
+    margin:0 auto 35px;
+
+}
+
+.finance-partnership p{
+
+    color:rgba(255,255,255,.88);
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:24px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .finance-partnership{
+
+        padding:90px 0;
+
+    }
+
+    .finance-partnership h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .finance-partnership p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   CORE VALUES
+========================================== */
+
+.finance-values{
+
+    padding:120px 0;
+
+    background:#f8f7f3;
+
+}
+
+.finance-values-header{
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.finance-values-header h2{
+
+    color:var(--primary);
+
+    font-size:clamp(2.8rem,5vw,4rem);
+
+    line-height:1.2;
+
+    margin-bottom:24px;
+
+}
+
+.finance-values-header .section-divider{
+
+    margin:0 auto 30px;
+
+}
+
+.finance-values-header p{
+
+    color:#666;
+
+    font-size:17px;
+
+    line-height:2;
+
+}
+
+.finance-values-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    margin-bottom:70px;
+
+}
+
+.finance-value-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.finance-value-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 28px 60px rgba(0,0,0,.12);
+
+}
+
+.finance-value-card i{
+
+    font-size:42px;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+.finance-value-card h3{
+
+    color:var(--primary);
+
+    font-size:22px;
+
+    line-height:1.4;
+
+}
+
+.finance-values-footer{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.finance-values-footer p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+    .finance-values-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .finance-values{
+
+        padding:80px 0;
+
+    }
+
+    .finance-values-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .finance-values-header h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .finance-values-header p,
+
+    .finance-values-footer p{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* ==========================================
+   FINANCE CLOSING
+========================================== */
+
+.finance-closing{
+
+    position:relative;
+
+    padding:140px 0;
+
+    background:url("../images/finance/finale.jpg") center center/cover no-repeat;
+
+    overflow:hidden;
+
+}
+
+.finance-closing-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,8,8,.82);
+
+}
+
+.finance-closing-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.finance-logo{
+
+    width:95px;
+
+    margin-bottom:30px;
+
+}
+
+.finance-closing span{
+
+    display:inline-block;
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:22px;
+
+}
+
+.finance-closing h2{
+
+    color:#fff;
+
+    font-size:clamp(2.8rem,5vw,4.5rem);
+
+    line-height:1.2;
+
+    margin-bottom:30px;
+
+}
+
+.closing-divider{
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    margin:0 auto 35px;
+
+}
+
+.finance-closing p{
+
+    max-width:820px;
+
+    margin:0 auto 45px;
+
+    color:rgba(255,255,255,.88);
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+.finance-closing h4{
+
+    color:#fff;
+
+    font-size:30px;
+
+    margin-bottom:12px;
+
+}
+
+.finance-closing small{
+
+    color:var(--secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .finance-closing{
+
+        padding:90px 0;
+
+    }
+
+    .finance-logo{
+
+        width:70px;
+
+    }
+
+    .finance-closing h2{
+
+        font-size:2.4rem;
+
+    }
+
+    .finance-closing p{
+
+        font-size:16px;
+
+    }
+
+    .finance-closing h4{
+
+        font-size:24px;
+
+    }
+
+}
