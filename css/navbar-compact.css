@@ -1,0 +1,35 @@
+/* Compact navbar for article pages */
+.navbar-compact{
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  padding: 14px 0;
+}
+
+.navbar-compact .navbar-compact-inner{
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.navbar-compact .brand{
+  color:var(--primary);
+  font-weight:700;
+  text-decoration:none;
+  font-size:1.05rem;
+}
+
+.navbar-compact .back-link{
+  color:var(--secondary);
+  text-decoration:none;
+  font-weight:600;
+  font-size:0.95rem;
+}
+
+/* Small tweaks for narrow screens */
+@media(max-width:480px){
+  .navbar-compact .brand{font-size:1rem}
+  .navbar-compact .back-link{font-size:0.9rem}
+}
