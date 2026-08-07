@@ -106,18 +106,23 @@ function fixNavbarPaths() {
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    const components = [
-
-        ["navbar", "navbar.html"],
-        ["hero", "hero.html"],
-        ["highlights", "bento-grid.html"],
-        ["videos", "videos.html"],
-        ["news", "news.html"],
-        ["gallery", "gallery.html"],
-        ["contact", "contact.html"],
-        ["footer", "footer.html"]
-
-    ];
+    // Load only navbar and footer on article subpages to avoid injecting
+    // homepage sections (hero, highlights, videos, etc.) above article content.
+    const components = isSubPage
+        ? [
+            ["navbar", "navbar.html"],
+            ["footer", "footer.html"]
+        ]
+        : [
+            ["navbar", "navbar.html"],
+            ["hero", "hero.html"],
+            ["highlights", "bento-grid.html"],
+            ["videos", "videos.html"],
+            ["news", "news.html"],
+            ["gallery", "gallery.html"],
+            ["contact", "contact.html"],
+            ["footer", "footer.html"]
+        ];
 
     for (const [id, file] of components) {
 
