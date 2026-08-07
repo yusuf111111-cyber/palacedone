@@ -106,11 +106,10 @@ function fixNavbarPaths() {
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    // Load only navbar and footer on article subpages to avoid injecting
-    // homepage sections (hero, highlights, videos, etc.) above article content.
+    // On article subpages load a compact navbar (site title + back link) and footer
     const components = isSubPage
         ? [
-            ["navbar", "navbar.html"],
+            ["navbar", "navbar-compact.html"],
             ["footer", "footer.html"]
         ]
         : [
