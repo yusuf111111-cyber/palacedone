@@ -415,6 +415,84 @@
 
 
 /* ==========================================
+   ARTICLE PAGE STYLES
+========================================== */
+
+.news-article.container{
+    max-width:960px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+.article-hero .section-tag{
+    display:inline-block;
+    padding:6px 12px;
+    background:rgba(184,134,11,.12);
+    color:var(--secondary);
+    border-radius:999px;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:1.5px;
+    margin-bottom:16px;
+}
+
+.article-hero h1{
+    font-size:clamp(1.8rem,3.4vw,2.6rem);
+    color:var(--primary);
+    margin:12px 0 8px;
+    line-height:1.2;
+}
+
+.article-hero .meta{
+    color:#888;
+    margin-bottom:18px;
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.article-image{
+    margin:20px 0;
+}
+
+.article-image img{
+    width:100%;
+    height:auto;
+    max-height:640px;
+    object-fit:cover;
+    display:block;
+    border-radius:12px;
+}
+
+.article-body{
+    color:#444;
+    font-size:18px;
+    line-height:1.9;
+}
+
+.article-body p{
+    margin-bottom:18px;
+}
+
+.article-footer{
+    margin-top:32px;
+}
+
+.back-link{
+    color:var(--secondary);
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* Small screens tweaks */
+@media(max-width:768px){
+    .news-article.container{padding:0 16px; margin:40px auto}
+    .article-hero h1{font-size:1.6rem}
+    .article-image img{max-height:420px}
+}
+
+
+/* ==========================================
    RESPONSIVE
 ========================================== */
 
