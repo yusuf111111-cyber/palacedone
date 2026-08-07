@@ -484,11 +484,30 @@
     font-weight:600;
 }
 
+/* Lead paragraph and drop-cap for better readability */
+.article-body .lead{
+    font-size:1.12rem;
+    color:#333;
+    margin-bottom:22px;
+    font-weight:500;
+}
+
+.article-body .dropcap:first-letter{
+    float:left;
+    font-size:3.2rem;
+    line-height:1;
+    margin-right:12px;
+    color:var(--secondary);
+    font-weight:700;
+    font-family: 'Cormorant Garamond', serif;
+}
+
 /* Small screens tweaks */
 @media(max-width:768px){
     .news-article.container{padding:0 16px; margin:40px auto}
     .article-hero h1{font-size:1.6rem}
     .article-image img{max-height:420px}
+    .article-body .dropcap:first-letter{font-size:2.6rem}
 }
 
 
